@@ -10,5 +10,5 @@ router.post('/encode', ShortenerController.encode);
 
 router.post('/decode', ShortenerController.decode);
 
-
+router.post('/statistics', ShortenerController.getStatistics);
 module.exports = router;
