@@ -4,6 +4,7 @@ const express = require('express');
 var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
 const studentRouter = require('./routes/student');
+const shortenerRouter = require('./routes/shortener');
 
 const app = express();
 app.use(express.json());
@@ -15,7 +16,7 @@ app.use('/', studentRouter);
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
 app.use('/student', studentRouter);
-
+app.use('/shortener', shortenerRouter);
 // app.get('/api/courses', (req, res) => {
 //   res.json(courses);
 // });
